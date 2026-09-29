@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<meta name="text-scale" content="scale" />
+		<meta name="description" content="Live buses and trains across the GTA: TTC, MiWay, GO Transit." />
+		<meta name="theme-color" content="#0f766e" />
+		<link rel="manifest" href="/transit-time/manifest.webmanifest" />
+		<link rel="icon" href="/transit-time/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/transit-time/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-title" content="Transit Time" />
+		<title>Transit Time</title>
+		<link href="/transit-time/_app/immutable/entry/start.BUIUKMU4.js" rel="modulepreload">
+		<link href="/transit-time/_app/immutable/chunks/DrMQiOrp.js" rel="modulepreload">
+		<link href="/transit-time/_app/immutable/chunks/D36rMO8P.js" rel="modulepreload">
+		<link href="/transit-time/_app/immutable/entry/app.BqN_q6tl.js" rel="modulepreload">
+		<link href="/transit-time/_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
+		<link href="/transit-time/_app/immutable/nodes/0.BkdXcSb_.js" rel="modulepreload">
+		
+		<link href="/transit-time/_app/immutable/assets/0.BTTnEo1D.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_1pigjlk = {
+						base: "/transit-time",
+						assets: "/transit-time"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/transit-time/_app/immutable/entry/start.BUIUKMU4.js"),
+						import("/transit-time/_app/immutable/entry/app.BqN_q6tl.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = '/transit-time/service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised);
+						});
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>
