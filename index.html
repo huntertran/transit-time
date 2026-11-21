@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="referrer" content="strict-origin-when-cross-origin" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 		<meta name="text-scale" content="scale" />
 		<meta name="description" content="Live buses and trains across the GTA: TTC, MiWay, GO Transit." />
@@ -14,22 +15,23 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="apple-mobile-web-app-title" content="Transit Time" />
 		<title>Transit Time</title>
-		<link href="./_app/immutable/entry/start.DWUPRCZm.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/yA10xN1l.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/CxGV38vC.js" rel="modulepreload">
-		<link href="./_app/immutable/entry/app.BSNROKhw.js" rel="modulepreload">
+		<meta http-equiv="content-security-policy" content="default-src 'self'; worker-src 'self' blob:; connect-src 'self' https://transit-time.hunter-tran-canada.workers.dev https://tiles.openfreemap.org https://fonts.openmaptiles.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tile.openstreetmap.org; font-src 'self'; img-src 'self' data: blob: https://tiles.openfreemap.org https://fonts.openmaptiles.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tile.openstreetmap.org; object-src 'none'; script-src 'self' 'sha256-8FdDYjXjc6qIQweWvTNn1StoE6gW45JvbtTY6p0gHMw='; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'none'">
+		<link href="./_app/immutable/entry/start.M1hF1ywB.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/3s00r7ON.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Dpvf9F8A.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.CkZzl70E.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/0.1gCQ2mep.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/2.BZRnsNjc.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.D8siyrM1.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.jQ6R0GoN.js" rel="modulepreload">
 		
-		<link href="./_app/immutable/assets/0.lXKceJAx.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2.D8bnwOf-.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/0.LlXzCz8j.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.s-WjmOIf.css" rel="stylesheet">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_12ew9a0 = {
+					__sveltekit_6ks4t8 = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/transit-time"
 					};
@@ -37,8 +39,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.DWUPRCZm.js"),
-						import("./_app/immutable/entry/app.BSNROKhw.js")
+						import("./_app/immutable/entry/start.M1hF1ywB.js"),
+						import("./_app/immutable/entry/app.CkZzl70E.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
