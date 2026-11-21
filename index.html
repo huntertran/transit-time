@@ -15,14 +15,16 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="apple-mobile-web-app-title" content="Transit Time" />
 		<title>Transit Time</title>
-		<meta http-equiv="content-security-policy" content="default-src 'self'; worker-src 'self' blob:; connect-src 'self' https://transit-time.hunter-tran-canada.workers.dev https://tiles.openfreemap.org https://fonts.openmaptiles.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tile.openstreetmap.org; font-src 'self'; img-src 'self' data: blob: https://tiles.openfreemap.org https://fonts.openmaptiles.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tile.openstreetmap.org; object-src 'none'; script-src 'self' 'sha256-cHwO5i7DeLqYTv1j1I7Gl8jNvnTe5MAPm1cspGtMZCk='; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'none'">
-		<link href="./_app/immutable/entry/start.bWY6R5ry.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/CydiMEfk.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/Dpvf9F8A.js" rel="modulepreload">
-		<link href="./_app/immutable/entry/app.OOs0Un5m.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/0.D8siyrM1.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/2.jQ6R0GoN.js" rel="modulepreload">
+		<meta http-equiv="content-security-policy" content="default-src 'self'; worker-src 'self' blob:; connect-src 'self' https://transit-time.hunter-tran-canada.workers.dev https://tiles.openfreemap.org https://fonts.openmaptiles.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tile.openstreetmap.org; font-src 'self'; img-src 'self' data: blob: https://tiles.openfreemap.org https://fonts.openmaptiles.org https://basemaps.cartocdn.com https://tiles.basemaps.cartocdn.com https://tile.openstreetmap.org; object-src 'none'; script-src 'self' 'sha256-W3k+LQxcwGx+1SRPCWMmOWJaz+KxBWrafRZeAa2TrAc='; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'none'">
+		<link href="./_app/immutable/entry/start.BiJyCRs-.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DclECHGd.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CoDgsfxY.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DaW2Z92M.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CWhtYvu9.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.B4Yd7sWu.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.aUw8Tlmp.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.DABTT-ht.js" rel="modulepreload">
 		
 		<link href="./_app/immutable/assets/0.LlXzCz8j.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/2.s-WjmOIf.css" rel="stylesheet">
@@ -31,17 +33,17 @@
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_b20zff = {
+					__sveltekit_l0xwbe = {
 						base: new URL(".", location).pathname.slice(0, -1),
+						version: "1795234991573",
 						assets: "/transit-time"
 					};
 
 					const element = document.currentScript.parentElement;
 
-					Promise.all([
-						import("./_app/immutable/entry/start.bWY6R5ry.js"),
-						import("./_app/immutable/entry/app.OOs0Un5m.js")
-					]).then(([kit, app]) => {
+					import("./_app/immutable/entry/start.BiJyCRs-.js").then(async (kit) => {
+						kit.init(__sveltekit_l0xwbe);
+						const app = await import("./_app/immutable/entry/app.B4Yd7sWu.js");
 						kit.start(app, element);
 					});
 
@@ -53,7 +55,7 @@
 						);
 						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
 						addEventListener('load', function () {
-							navigator.serviceWorker.register(sanitised);
+							navigator.serviceWorker.register(sanitised, { type: 'module' });
 						});
 					}
 				}
